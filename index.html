@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Card Chacking!</title>
+  </head>
+
+  <body>
+<article class="card">
+
+<ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+		<i class="fa fa-credit-card"></i> Credit Card</a></li>
+</ul>
+
+
+
+	<form name = "for1" role="form" action="/action_page.php" method="post">
+	<div class="form-group">
+		<label for="username">Full name (on the card)</label>
+		<input id="namess" type="text" class="form-control" name="username" placeholder="full name" >
+
+	</div> <!-- form-group.// -->
+
+
+
+
+	<div class="form-group">
+		<label for="cardNumber">Card number</label>
+		<div class="input-group">
+			<input type="text" class="form-control" name="cardNumber" placeholder="Card Number">
+			<div class="input-group-append">
+				<span class="input-group-text text-muted">
+					<i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>  
+					<i class="fab fa-cc-mastercard"></i>
+				</span>
+			</div>
+		</div>
+	</div> <!-- form-group.// -->
+
+	<div class="row">
+	    <div class="col-sm-8">
+	        <div class="form-group">
+	            <label><span class="hidden-xs">Expiration</span> </label>
+	        	<div class="input-group">
+	        		<input type="number" class="form-control" placeholder="MM" name="">
+		            <input type="number" class="form-control" placeholder="YY" name="">
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-sm-4">
+	        <div class="form-group">
+	            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+	            <input type="number" class="form-control">
+	        </div> <!-- form-group.// -->
+	    </div>
+	</div> <!-- row.// -->
+	<button class="subscribe btn btn-primary btn-block"  type="button" onclick="validateForm()"> Confirm  </button>
+	</form>
+
+
+
+
+
+</article> <!-- card.// -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script type="./style.js">
+
+		</script>
+
+	</body>
+</html>
