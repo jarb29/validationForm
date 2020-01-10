@@ -1,17 +1,20 @@
+
 var myForm = document.getElementById("myform");
 
 
-myForm.addEventListener("submit",(e) => {
-  if (validateForm()===false){e.preventDefault();}
+myForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  validateForm();
 
  });
 
 
 
-function validateForm(){
+const validateForm = () => {
+
   var x  = document.getElementById("exampleInputEmail1").value;
   var b = document.getElementById("exampleInputPassword1").value;
-  var c = document.getElementById("exampleCheck1").value;
+  var c = document.getElementById("exampleCheck1");
 
   if (x == "") {
     alert("Email must be filled out");
@@ -29,15 +32,3 @@ function validateForm(){
 
   }
 };
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
